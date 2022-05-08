@@ -33,6 +33,7 @@ Shader "Unlit/VertexOffsetWaterShader"
             float4 _Color;
             float _WaveAmp;
             float _WaveSpeed;
+            sampler2D _texture;
 
             float GetWave(float2 uv){
                 float2 uvCenter = uv*2-1;
